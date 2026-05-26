@@ -3,6 +3,99 @@
 
 class Program
 {
+
+    static void Print(string text)
+    {
+        Console.WriteLine(text);
+    }
+
+    static void Greet(string name)
+    {
+        Console.WriteLine("Hello, " + name + "!");
+    }
+
+    static int Sum(int a, int b)
+    {
+        return a + b;
+    }
+
+    static double Calculatearea(double width, double height)
+    {
+        return width * height;
+    }
+
+    static int Max(int a, int b)
+    {
+        return (a > b) ? a : b;
+    }
+
+    static void Raodenoba(int a)
+    {
+        for (int i = 0; i < a; i++) {
+            Console.WriteLine("hellow world");
+        }
+    }
+    static void CelsiustoFahrenheit(double celsius)
+    {
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        Console.WriteLine(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
+    }
+
+    static int cifrtajami(int num) {
+
+        int sum = 0;
+
+        while (num!= 0)
+        {
+            int digit = num % 10;
+            sum += digit;
+            num /= 10;
+        }
+
+        return sum;
+    
+    }
+
+    static string CountBs(string text) {
+
+        int count = 0;
+
+       int shedegi =  text.Contains("B") ? count++ : count;
+
+        return "Number of 'B' characters in the text: " + count;
+    }
+
+    static void Jami(int start,int end)
+    {
+        int sum = 0;
+
+        for (int i =start;i<end;i++)
+        {
+            sum = sum + i;
+        }
+    }
+
+    static bool Palindrome(string text)
+    {
+
+
+        string reverse = "";
+
+        for(int i =text.Length;i>0;i--)
+        {
+            reverse = reverse + text[i];
+        }
+
+        bool shedegi = (reverse == text) ? true : false;
+
+        return shedegi;
+
+
+    }
+    
+  
+
+
     public static void Main(string[] args)
     {
         //Console.WriteLine("hello world");
@@ -343,6 +436,11 @@ class Program
         //Console.WriteLine(str4);
         //Console.WriteLine(str5);
         //Console.WriteLine(str6);
+
+
+        //methods
+
+        
 
 
 
