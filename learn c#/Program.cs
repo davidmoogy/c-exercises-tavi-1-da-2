@@ -233,6 +233,60 @@ class Program
         //}
 
 
+        //for(int b = 0; b < 10; b++)
+        //{
+        //    Console.WriteLine(b);
+        //}
+
+        //int i = 0;
+
+        //while(i < 10)
+        //{
+        //    Console.WriteLine(i++);
+        //}
+
+        //for(int c = 0; c < 20; c++)
+        //{
+        //    if(c % 2 == 0)
+        //    {
+        //        Console.WriteLine(c + " luwia");
+        //    }
+
+        //}
+
+        //Console.WriteLine("Enter number");
+        //int num = int.Parse(Console.ReadLine());
+
+        //for (int i = 0; i < num; i++) {
+        //    Console.WriteLine("hello wolrd");
+        //}
+
+        //int sum = 0;
+
+        //for(int i = 0; i < 100; i++)
+        //{
+        //    sum = sum + i;
+        //}
+        //Console.WriteLine(sum);
+
+        //int secret = 9; // secret number
+
+        //Console.WriteLine("Enter num to guess");
+        //while (true)
+        //{
+            
+        //    int guess = int.Parse(Console.ReadLine());
+        //    if (guess == secret)
+        //    {
+        //        Console.WriteLine("Congrats you guessed number");
+        //        break;
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("try again pls");
+        //    }
+        //}
+
 
 
 
