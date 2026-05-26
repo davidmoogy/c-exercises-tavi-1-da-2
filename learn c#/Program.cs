@@ -274,7 +274,7 @@ class Program
         //Console.WriteLine("Enter num to guess");
         //while (true)
         //{
-            
+
         //    int guess = int.Parse(Console.ReadLine());
         //    if (guess == secret)
         //    {
@@ -286,6 +286,63 @@ class Program
         //        Console.WriteLine("try again pls");
         //    }
         //}
+
+        //int num1 = 25;
+        //double double1 = num1;
+
+        //double num2 = 15.7;
+        //int int1 = (int)num2;
+
+        //float float1 = 12.5f;
+        //int int2 = (int)float1;
+
+        //int num3 = 50;
+        //float float2 = num3;
+
+        //long long1 = 100000;
+        //int int3 = (int)long1;
+
+        //int num4 = 200;
+        //long long2 = num4;
+
+        //char char1 = 'A';
+        //int ascii = (int)char1;
+
+        //int num5 = 66;
+        //char char2 = (char)num5;
+
+        //string str1 = "123";
+        //int int4 = Convert.ToInt32(str1);
+
+        //string str2 = "45.8";
+        //double double2 = Convert.ToDouble(str2);
+
+        //string str3 = "true";
+        //bool bool1 = Convert.ToBoolean(str3);
+
+        //int num6 = 99;
+        //string str4 = Convert.ToString(num6);
+
+        //double num7 = 18.9;
+        //string str5 = Convert.ToString(num7);
+
+        //bool bool2 = true;
+        //string str6 = Convert.ToString(bool2);
+
+        //Console.WriteLine(double1);
+        //Console.WriteLine(int1);
+        //Console.WriteLine(int2);
+        //Console.WriteLine(float2);
+        //Console.WriteLine(int3);
+        //Console.WriteLine(long2);
+        //Console.WriteLine(ascii);
+        //Console.WriteLine(char2);
+        //Console.WriteLine(int4);
+        //Console.WriteLine(double2);
+        //Console.WriteLine(bool1);
+        //Console.WriteLine(str4);
+        //Console.WriteLine(str5);
+        //Console.WriteLine(str6);
 
 
 
