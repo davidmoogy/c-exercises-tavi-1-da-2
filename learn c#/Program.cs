@@ -4,96 +4,96 @@
 class Program
 {
 
-    static void Print(string text)
-    {
-        Console.WriteLine(text);
-    }
+    //static void Print(string text)
+    //{
+    //    Console.WriteLine(text);
+    //}
 
-    static void Greet(string name)
-    {
-        Console.WriteLine("Hello, " + name + "!");
-    }
+    //static void Greet(string name)
+    //{
+    //    Console.WriteLine("Hello, " + name + "!");
+    //}
 
-    static int Sum(int a, int b)
-    {
-        return a + b;
-    }
+    //static int Sum(int a, int b)
+    //{
+    //    return a + b;
+    //}
 
-    static double Calculatearea(double width, double height)
-    {
-        return width * height;
-    }
+    //static double Calculatearea(double width, double height)
+    //{
+    //    return width * height;
+    //}
 
-    static int Max(int a, int b)
-    {
-        return (a > b) ? a : b;
-    }
+    //static int Max(int a, int b)
+    //{
+    //    return (a > b) ? a : b;
+    //}
 
-    static void Raodenoba(int a)
-    {
-        for (int i = 0; i < a; i++) {
-            Console.WriteLine("hellow world");
-        }
-    }
-    static void CelsiustoFahrenheit(double celsius)
-    {
-        double fahrenheit = (celsius * 9 / 5) + 32;
-        Console.WriteLine(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
-    }
+    //static void Raodenoba(int a)
+    //{
+    //    for (int i = 0; i < a; i++) {
+    //        Console.WriteLine("hellow world");
+    //    }
+    //}
+    //static void CelsiustoFahrenheit(double celsius)
+    //{
+    //    double fahrenheit = (celsius * 9 / 5) + 32;
+    //    Console.WriteLine(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit.");
+    //}
 
-    static int cifrtajami(int num) {
+    //static int cifrtajami(int num) {
 
-        int sum = 0;
+    //    int sum = 0;
 
-        while (num!= 0)
-        {
-            int digit = num % 10;
-            sum += digit;
-            num /= 10;
-        }
+    //    while (num!= 0)
+    //    {
+    //        int digit = num % 10;
+    //        sum += digit;
+    //        num /= 10;
+    //    }
 
-        return sum;
+    //    return sum;
     
-    }
+    //}
 
-    static string CountBs(string text) {
+    //static string CountBs(string text) {
 
-        int count = 0;
+    //    int count = 0;
 
-       int shedegi =  text.Contains("B") ? count++ : count;
+    //   int shedegi =  text.Contains("B") ? count++ : count;
 
-        return "Number of 'B' characters in the text: " + count;
-    }
+    //    return "Number of 'B' characters in the text: " + count;
+    //}
 
-    static void Jami(int start,int end)
-    {
-        int sum = 0;
+    //static void Jami(int start,int end)
+    //{
+    //    int sum = 0;
 
-        for (int i =start;i<end;i++)
-        {
-            sum = sum + i;
-        }
-    }
+    //    for (int i =start;i<end;i++)
+    //    {
+    //        sum = sum + i;
+    //    }
+    //}
 
-    static bool Palindrome(string text)
-    {
-
-
-        string reverse = "";
-
-        for(int i =text.Length;i>0;i--)
-        {
-            reverse = reverse + text[i];
-        }
-
-        bool shedegi = (reverse == text) ? true : false;
-
-        return shedegi;
+    //static bool Palindrome(string text)
+    //{
 
 
-    }
-    
-  
+    //    string reverse = "";
+
+    //    for(int i =text.Length;i>0;i--)
+    //    {
+    //        reverse = reverse + text[i];
+    //    }
+
+    //    bool shedegi = (reverse == text) ? true : false;
+
+    //    return shedegi;
+
+
+    //}
+
+
 
 
     public static void Main(string[] args)
@@ -438,9 +438,137 @@ class Program
         //Console.WriteLine(str6);
 
 
-        //methods
+        //methods zemot aris ubralod gamodzaxebuli mainში ar aris
+
+
+        //masivebi
+
+
+        int[] array = new int[5];
+
+     
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write("Enter element for index " + i + ": ");
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+
+      
+        Console.WriteLine("\nEntered Elements:");
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.WriteLine(array[i]);
+        }
+
 
         
+        Array.Sort(array);
+
+        Console.WriteLine("\nSorted Array:");
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.WriteLine(array[i]);
+        }
+
+
+        
+        int maxElement = array[array.Length - 1];
+
+        Console.WriteLine("\nMAX ELEMENT OF ARRAY IS: " + maxElement);
+
+
+       
+        int sum = 0;
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            sum += array[i];
+        }
+
+        Console.WriteLine("SUM OF ARRAY ELEMENTS IS: " + sum);
+
+
+      
+        int average = sum / array.Length;
+
+        Console.WriteLine("AVERAGE OF ARRAY ELEMENTS IS: " + average);
+
+
+     
+        int minimal = array[0];
+
+        Console.WriteLine("MINIMAL ELEMENT IS: " + minimal);
+
+
+       
+        bool result = array.Contains(5);
+
+        if (result)
+        {
+            Console.WriteLine("\nArray contains number 5");
+        }
+        else
+        {
+            Console.WriteLine("\nArray does not contain number 5");
+        }
+
+
+        
+        Console.WriteLine("\nEnter element to remove from array:");
+
+        int elementToRemove = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] == elementToRemove)
+            {
+                for (int j = i; j < array.Length - 1; j++)
+                {
+                    array[j] = array[j + 1];
+                }
+
+                Array.Resize(ref array, array.Length - 1);
+
+                break;
+            }
+        }
+
+
+        Console.WriteLine("\nArray After Removing Element:");
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.WriteLine(array[i]);
+        }
+
+
+
+        int count = 0;
+
+        if(array.Contains(5))
+        {
+            count++;
+        }
+        Console.WriteLine("element included " + count + "times");
+
+
+        Array.Sort(array);
+
+        int secondmax = array[array.Length - 2];
+
+        Console.WriteLine("second max is " + secondmax);
+
+        string[] masivi =  { "hello","dato","ana","nila" };
+        array.Sort(masivi);
+
+        for(int i = 0; i < masivi.Length; i++)
+        {
+            Console.WriteLine(masivi[i]);
+
+        }
 
 
 
@@ -454,5 +582,11 @@ class Program
 
 
 
-    }
+
+
+
+
+
+
 }
+
